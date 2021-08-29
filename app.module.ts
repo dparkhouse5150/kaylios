@@ -10,13 +10,15 @@ import {environment} from '../environments/environment';
 import {VideoDetailsComponent} from './video-details/video-details.component';
 import {FormsModule} from "@angular/forms";
 import { VideoListComponent } from './video-list/video-list.component';
+import { AddVideoComponent } from './add-video/add-video.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         VideoComponent,
         VideoDetailsComponent,
-        VideoListComponent
+        VideoListComponent,
+        AddVideoComponent
     ],
     imports: [
         BrowserModule,
