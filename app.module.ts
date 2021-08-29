@@ -9,12 +9,14 @@ import {AngularFirestoreModule} from "@angular/fire/compat/firestore";
 import {environment} from '../environments/environment';
 import {VideoDetailsComponent} from './video-details/video-details.component';
 import {FormsModule} from "@angular/forms";
+import { VideoListComponent } from './video-list/video-list.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         VideoComponent,
-        VideoDetailsComponent
+        VideoDetailsComponent,
+        VideoListComponent
     ],
     imports: [
         BrowserModule,
