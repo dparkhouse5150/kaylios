@@ -6,18 +6,7 @@ import {AddVideoComponent} from './add-video/add-video.component';
 import {VideoPlaylistComponent} from './video-playlist/video-playlist.component';
 
 const routes: Routes = [
-    {
-        path: '/video',
-        component: VideoComponent
-    },
-    {
-        path: '/video-detail/:id',
-        component: VideoDetailsComponent
-    },
-    {
-        path: '/video/add',
-        component: AddVideoComponent
-    },
+
     {
         path: '',
         component: VideoPlaylistComponent
