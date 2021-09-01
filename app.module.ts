@@ -11,6 +11,8 @@ import {VideoDetailsComponent} from './video-details/video-details.component';
 import {FormsModule} from "@angular/forms";
 import { VideoListComponent } from './video-list/video-list.component';
 import { AddVideoComponent } from './add-video/add-video.component';
+import { VideoPlaylistComponent } from './video-playlist/video-playlist.component';
+import { VideoPlaylistItemComponent } from './video-playlist-item/video-playlist-item.component';
 
 @NgModule({
     declarations: [
@@ -18,7 +20,9 @@ import { AddVideoComponent } from './add-video/add-video.component';
         VideoComponent,
         VideoDetailsComponent,
         VideoListComponent,
-        AddVideoComponent
+        AddVideoComponent,
+        VideoPlaylistComponent,
+        VideoPlaylistItemComponent
     ],
     imports: [
         BrowserModule,
