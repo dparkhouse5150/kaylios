@@ -7,11 +7,13 @@
         padding: 20px;
         position: relative;
         border-bottom: 2px solid #3E4460;
+
         .title {
             color: #fff;
             float: left;
             font-size: 14px;
             margin-right: 10px;
+            text-transform: capitalize;
         }
 
         .number {
@@ -28,8 +30,25 @@
                 height: 30px;
 
                 position: absolute;
-                top: 20px;
-                right: 20px;
+                top: 15px;
+                right: 15px;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .card-body {
+        .videos {
+            list-style: none;
+
+            li {
+                .number,
+                .video-name {
+                    float: left;
+                }
             }
         }
     }
