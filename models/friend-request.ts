@@ -1,7 +1,9 @@
 import {User} from './user'
 
 export interface FriendRequest {
-    id?: string;
-    sender: User;
-    receiver: User;
+    id?: string
+    sender: User
+    receiver: User
+    time: Date
+    date: Date
 }
