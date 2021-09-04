@@ -1,0 +1,42 @@
+<div *ngIf="currentVideo" class="edit-form">
+    <h4>Video</h4>
+    <form>
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input
+                type="text"
+                id="title"
+                class="form-control"
+                [(ngModel)]="currentVideo.title"
+                name="title">
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description</label>
+            <input type="text"
+                   id="description"
+                   class="form-control"
+                   [(ngModel)]="currentVideo.description"
+                   name="description"
+                   placeholder="Description">
+        </div>
+
+        <div class="form-group">
+            <label><strong>Status:</strong></label>
+            {{ currentVideo.published ? "Published" : "Pending" }}
+        </div>
+        <!-- refactor this -->
+        <button
+            type="button"
+            class="btn btn-primary mr-2"
+            *ngIf="currentVideo.published" (click)="updatePublished(false)">
+            Unpublish
+        </button>
+
+        <button *ngIf="!currentVideo.published" class="btn btn-primary mr-2" (click)="updatePublished(true)">
+            Publish
+        </button>
+
+        <button type="submit" class="btn btn-success"></button>
+    </form>
+</div>
