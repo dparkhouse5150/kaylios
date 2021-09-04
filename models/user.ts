@@ -7,4 +7,10 @@ export interface User {
     };
     screenName: string;
     joinedDate: Date;
+
+    social: {
+        github: string,
+        facebook: string,
+        twitter: string,
+    }
 }
