@@ -5,5 +5,5 @@ export interface FriendRequest {
     sender: User
     receiver: User
     time: Date
-    date: Date
+    dateRequested: Date
 }
