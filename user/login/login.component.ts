@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, NgForm, Validators } from '@angular/forms';
 import { User } from 'src/app/models/user';
 import { SocialAuthService, GoogleLoginProvider, SocialUser } from 'angularx-social-login';
-import {titleLengthChecker} from '../../validation"'
+import {titleLengthChecker} from '../../validation/validationFn'
 @Component({
     selector: 'app-login',
     templateUrl: './login.component.html',
@@ -32,6 +32,6 @@ export class LoginComponent implements OnInit {
     }
 
     logout = ():void => {
-        this.socialAuthService.signOut
+        this.socialAuthService.signOutgit 
     }
 }
