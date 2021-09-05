@@ -1,10 +1,12 @@
 export interface User {
     id?: string;
+
     name: {
         first: string,
         middle: string;
         family: string;
     };
+
     screenName: string;
     joinedDate: Date;
 
@@ -13,4 +15,12 @@ export interface User {
         facebook: string,
         twitter: string,
     }
+
+    isOnline: boolean
+    loginTime: Date
+    logoutTime: Date
+    dateJoined: Date
+    dateUpdated: Date
+
+    blockedUsers: Array<any>
 }
